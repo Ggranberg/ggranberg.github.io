@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gustav Nordell Granberg – Webbutveckling</title>
+<meta name="description" content="Gustav Nordell Granberg bygger hemsidor och webbappar. Enskild firma, godkänd för F-skatt.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+:root{--bg:#f3f6f4;--card:#fff;--ink:#111a17;--muted:#53615b;--line:#d7dfdb;--accent:#1d6b58}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1311;--card:#141c19;--ink:#e7eeeb;--muted:#9aaaa3;--line:#25312c;--accent:#62c4a7;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+main{display:grid;gap:48px;max-width:680px;margin:0 auto;padding:64px 20px 40px}
+h1,h2{margin:0;font-family:"Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.02em}
+h1{font-size:clamp(40px,10vw,68px);line-height:1}
+h2{font-size:22px}
+p{margin:0}
+.label{color:var(--muted);font:500 13px/1.45 "IBM Plex Mono",ui-monospace,monospace}
+.accent{color:var(--accent)}
+.lead{color:var(--muted);font-size:20px;line-height:1.5}
+.intro,.contact{display:grid;gap:14px}
+ul{margin:0;padding:0;list-style:none}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 32px}
+.services li{display:grid;gap:6px;padding-top:16px;border-top:1px solid var(--line)}
+.contact ul{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.contact li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:16px 20px}
+.contact li+li{border-top:1px solid var(--line)}
+.contact a{color:var(--accent);font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+footer{display:grid;gap:2px;padding-top:20px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+<header class="intro">
+<p class="label accent">Webbutveckling · Enskild firma</p>
+<h1>Gustav Nordell Granberg</h1>
+<p class="lead">Jag bygger hemsidor och webbappar som fungerar lika bra i mobilen som på datorn.</p>
+</header>
+<ul class="services">
+<li><h2>Hemsidor</h2><p>Snabba och tydliga sidor som är lätta att hitta och läsa.</p><p class="label">HTML · CSS · JavaScript</p></li>
+<li><h2>Webbappar</h2><p>Skräddarsydda verktyg som körs direkt i webbläsaren.</p><p class="label">Node.js · PWA</p></li>
+</ul>
+<section class="contact">
+<h2>Kontakt</h2>
+<ul>
+<li><span class="label">E-post</span><a href="mailto:gustavgranberg2008@gmail.com">gustavgranberg2008<wbr>@gmail.com</a></li>
+<li><span class="label">Telefon</span><a href="tel:+46733527312">073-352 73 12</a></li>
+</ul>
+</section>
+<footer>
+<p class="label">Gustav Nordell Granberg · Enskild firma · Godkänd för F-skatt</p>
+<p class="label">SNI 62.100 Dataprogrammering · © 2026</p>
+</footer>
+</main>
+</body>
+</html>
